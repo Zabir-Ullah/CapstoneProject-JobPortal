@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply for Jobs</title>
+    <link rel="stylesheet" href="formStyles.css" />
+  </head>
+  <body class="light-mode">
+    <header>
+      <img src="joblogo.png" alt="Job Portal Logo" style="width: 150px" />
+      <h1>Apply for Jobs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="JobListings.html">Job Listings</a></li>
+          <li><a href="JobSearch.html">Search Jobs</a></li>
+          <li><a href="BookmarkedJobs.html">Bookmarked Jobs</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <main>
+      <form id="apply-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required />
+
+        <button type="submit">Apply Now</button>
+      </form>
+      <div id="confirmation-message" style="display: none">
+        <p>
+          Thank you for applying! We will review your application and get back
+          to you soon.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Job Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="formScripts.js"></script>
+    <script src="darkModeScripts.js"></script>
+  </body>
+</html>

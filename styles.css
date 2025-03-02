@@ -1,0 +1,245 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.features {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.feature-box {
+  display: inline-block;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.client-reviews {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.review-slider {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  max-width: 600px;
+}
+
+.review {
+  min-width: 100%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: #4caf50;
+  transition: color 0.3s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+header.dark-mode {
+  background-color: #222;
+}
+
+nav ul li a.dark-mode {
+  color: #ddd;
+}
+
+footer.dark-mode {
+  background-color: #222;
+}
+
+.intro.dark-mode,
+.feature-box.dark-mode,
+.step.dark-mode,
+.review.dark-mode {
+  background-color: #444;
+  border-color: #555;
+}
+
+button.dark-mode {
+  background-color: #555;
+}
+
+button.dark-mode:hover {
+  background-color: #666;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: black;
+}
